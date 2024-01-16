@@ -59,40 +59,38 @@ const BgChanger = () => {
   };
 
   return (
-    <div>
-      <h1>BgChanger</h1>
+    <div className="w-full max-w-md mx-auto">
+      <h1 className="text-4xl text-white text-center my-3">BgChanger</h1>
       <br />
       <div class="flex max-w-2xl flex-col items-center rounded-md border md:flex-row">
-        <div>
-          <div class="p-4">
-            <h1 class="inline-flex items-center text-lg font-semibold">
-              Color Picker{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="ml-2 h-4 w-4"
-              >
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
-            </h1>
-            <p class="mt-3 text-sm text-white-600">
-              The color {color} is {isDarkMode(color) ? "dark" : "light"}.
-            </p>
-            <input
-              type="color"
-              value={color}
-              className="m-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900"
-              onChange={(e) => setColor(e.target.value)}
-            />
-          </div>
+        <div class="p-4">
+          <h1 class="inline-flex items-center text-lg font-semibold">
+            Color Picker{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="ml-2 h-4 w-4"
+            >
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </h1>
+          <p class="mt-3 text-sm text-white-600">
+            The color {color} is {isDarkMode(color) ? "dark" : "light"}.
+          </p>
+          <input
+            type="color"
+            value={color}
+            className="m-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900"
+            onChange={(e) => setColor(e.target.value)}
+          />
         </div>
       </div>
 
@@ -108,7 +106,9 @@ const BgChanger = () => {
             {colorsList.map((colr, index) => (
               <button
                 key={index}
-                className={`outline-none px-4 py-1 shadow-sm rounded-full ${isDarkMode(colr) ? "text-white" : "text-black" }`}
+                className={`outline-none px-4 py-1 shadow-sm rounded-full ${
+                  isDarkMode(colr) ? "text-white" : "text-black"
+                }`}
                 style={{ backgroundColor: colr }}
                 onClick={() => setColor(colr)}
               >
