@@ -1,5 +1,6 @@
 import PasswordGenerator from "./components/project5/PasswordGenerator";
 import BgChanger from "./components/project4/BgChanger";
+import CurrencyConverter from "./components/project6/CurrencyConverter";
 
 function App() {
   // const myobj = {
@@ -10,14 +11,15 @@ function App() {
   //   1,2,3
   // ]
   // gap analysis-by yogesh
+
   return (
     <>
-    <PasswordGenerator/>
-    {/* <BgChanger/> */}
+      <CurrencyConverter />
+      {/* <PasswordGenerator/> */}
+      {/* <BgChanger/> */}
       {/* <Counter/>
       <ProductItem name={myobj.name} someObj={newArr} />
       <ProductItem name={myobj.name} btnText="click me"/> */}
-
     </>
   );
 }
