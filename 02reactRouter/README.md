@@ -36,6 +36,9 @@ we should use Link (react-router-dom) only for links instead of <a> tag. Because
 
 # layout using outlet (react-router-dom)
 - <outlet /> for all home components by keeping header and footer constant. So it will contain middle variable content.
+using this only we can add nested elements in the router
 
 # useparams()
 - useparams() is used to fetch data from the url provided by user in the url like user/:userid
+- useLoader() is used to fetch data from the loader of react-router from RouterProvider
+(used in github pages)
