@@ -62,9 +62,9 @@ const BgChanger = () => {
     <div className="w-full max-w-md mx-auto">
       <h1 className="text-4xl text-white text-center my-3">BgChanger</h1>
       <br />
-      <div class="flex max-w-2xl flex-col items-center rounded-md border md:flex-row">
-        <div class="p-4">
-          <h1 class="inline-flex items-center text-lg font-semibold">
+      <div className="flex max-w-2xl flex-col items-center rounded-md border md:flex-row">
+        <div className="p-4">
+          <h1 className="inline-flex items-center text-lg font-semibold">
             Color Picker{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,13 +76,13 @@ const BgChanger = () => {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="ml-2 h-4 w-4"
+              className="ml-2 h-4 w-4"
             >
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="7 7 17 7 17 17"></polyline>
             </svg>
           </h1>
-          <p class="mt-3 text-sm text-white-600">
+          <p className="mt-3 text-sm text-white-600">
             The color {color} is {isDarkMode(color) ? "dark" : "light"}.
           </p>
           <input

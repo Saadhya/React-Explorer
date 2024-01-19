@@ -14,3 +14,10 @@ Once the algorithm has finished comparing the two trees, it will generate a list
 - background changer project
 - optimized password generator project
 - currency converter using cdn url
+
+# to fetch free data from apis
+https://openweathermap.org/api
+https://restcountries.com/#endpoints-all
+https://dev.to/ruppysuppy/7-free-public-apis-you-will-love-as-a-developer-166p 
+https://www.freecodecamp.org/news/public-apis-for-developers/ 
+https://developer.spotify.com/
