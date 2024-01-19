@@ -18,7 +18,6 @@ function App() {
         //   alert(details);
         // }}
       >
-        {/* <Example2 /> */}
         <Products />
       </ErrorBoundary>
       {/* <div className="text-center m-4">

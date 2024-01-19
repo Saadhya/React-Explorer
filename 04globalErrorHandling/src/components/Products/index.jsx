@@ -8,7 +8,17 @@ const Products = () => {
   const { showBoundary, resetBoundary } = useErrorBoundary();
 
   const getSongs = async () => {
-    const res = await fetch(" https://api.spotify.com/v1/albums");
+    const token = "";
+    const res = await fetch(
+      "https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + token,
+        },
+      }
+    );
     console.log(res.json());
   };
   const fetchData = async () => {
@@ -33,12 +43,15 @@ const Products = () => {
 
   useEffect(() => {
     fetchData();
-    getSongs();
+    // will do this later
+    // getSongs();
   }, [0]);
   return (
     <>
       <div className="mx-auto max-w-7xl px-2 lg:px-8">
-        <h1 className="text-center text-3xl p-4 m-4 font-bold underline underline-offset-8">World's Cities list:</h1>
+        <h1 className="text-center text-3xl p-4 m-4 font-bold underline underline-offset-8">
+          World's Cities list:
+        </h1>
         <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
           {albums.map((data, index) => (
             <div key={data.flag}>

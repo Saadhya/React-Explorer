@@ -1,11 +1,12 @@
 import React from "react";
 
 const Fallback = ({ error, resetErrorBoundary }) => {
+    console.log(error)
   return (
     <div className="mx-auto flex h-auto w-1/2 mt-12 items-center text-center justify-center">
       <div className="px-2">
         <div>
-          <p className="text-sm font-semibold text-black">404 error</p>
+          {/* <p className="text-sm font-semibold text-black">{error.status}</p> */}
           <h1 className="mt-3 text-2xl font-semibold text-gray-800 md:text-3xl">
             We can&#x27;t find that page
           </h1>
