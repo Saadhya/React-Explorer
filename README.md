@@ -46,3 +46,10 @@ https://restcountries.com/#endpoints-all
 https://dev.to/ruppysuppy/7-free-public-apis-you-will-love-as-a-developer-166p 
 https://www.freecodecamp.org/news/public-apis-for-developers/ 
 https://developer.spotify.com/
+
+# to be worked on : HTML MEDIA TAGS
+- audio
+- video
+- source
+- embed
+- track
