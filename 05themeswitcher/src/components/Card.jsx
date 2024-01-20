@@ -1,5 +1,6 @@
 import React from "react";
-import { CheckCircle } from "lucide-react";
+import { Star, ChevronDown } from "lucide-react";
+// import { CheckCircle } from "lucide-react";
 
 const Card = () => {
   return (
@@ -8,15 +9,18 @@ const Card = () => {
         <a href="/">
           <img
             className="p-8 rounded-t-lg"
-            src="https://images.pexels.com/photos/18264716/pexels-photo-18264716/free-photo-of-man-people-laptop-internet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="https://images.pexels.com/photos/4533747/pexels-photo-4533747.jpeg?auto=compress&cs=tinysrgb&w=600"
+            // src="https://images.pexels.com/photos/16597295/pexels-photo-16597295/free-photo-of-sri-rangnath-ji-mandir-in-india.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="product_image1"
           />
         </a>
         <div className="px-5 pb-5">
           <a href="/">
             <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
+              Welcome to Ayodhya
+              {/* Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport */}
             </h5>
+            <h6 className="text-gray-900 dark:text-white">Jai Siya Ram</h6>
           </a>
           <div className="flex items-center mt-2.5 mb-5">
             <svg
@@ -70,7 +74,7 @@ const Card = () => {
           </div>
           <div className="flex items-center justify-between">
             <span className="text-3xl font-bold text-gray-900 dark:text-white">
-              $599
+              $1099
             </span>
             <a
               href="/"
@@ -81,7 +85,6 @@ const Card = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };
