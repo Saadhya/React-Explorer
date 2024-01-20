@@ -13,8 +13,7 @@ const Login = () => {
 
   const handleSubmit = () => {
     console.log(user);
-    setUserData({user});
-    // setUserData(user.name, user.password);
+    setUserData(user)
   };
 
   const handleChange = (e) => {
@@ -23,7 +22,7 @@ const Login = () => {
       ...prev,
       [name]: value,
     }));
-    console.log(user);
+    // console.log(user);
   };
   return (
     <div className="mx-auto flex gap-x-2 items-center justify-center h-1/2 w-1/2">
@@ -66,7 +65,7 @@ const Login = () => {
       <input type="text" /> */}
       <button
         type="button"
-        class="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+        class="rounded-md bg-black mt-6 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         onClick={handleSubmit}
       >
         login

@@ -77,17 +77,17 @@ const CurrencyConverter = () => {
           </div>
         </div>
       </div>
-      {/* <div class="mx-auto max-w-7xl py-12 md:py-20">
+      {/* <div className="mx-auto max-w-7xl py-12 md:py-20">
     
-        <div class="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+        <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
           <img
             alt="Contact us"
-            class="hidden max-h-full w-full rounded-lg object-cover lg:block"
+            className="hidden max-h-full w-full rounded-lg object-cover lg:block"
             src="https://images.pexels.com/photos/1528348/pexels-photo-1528348.jpeg?auto=compress&cs=tinysrgb&w=600"
           />
-          <div class="flex items-center justify-center">
+          <div className="flex items-center justify-center">
             
-            <div class="px-2 md:px-12">
+            <div className="px-2 md:px-12">
              
              
             </div>
