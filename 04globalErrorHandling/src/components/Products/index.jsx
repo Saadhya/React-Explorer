@@ -22,7 +22,7 @@ const Products = () => {
     console.log(res.json());
   };
   const fetchData = async () => {
-    await fetch(" https://restcountries.com/v3.1/all")
+    await fetch("https://restcountries.com/v3.1/al")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -35,7 +35,7 @@ const Products = () => {
       })
       .catch((err) => {
         setError(err);
-        // console.error(this.err);
+        // console.error(err);
         showBoundary(err);
       });
     // console.log(albums);
@@ -53,7 +53,7 @@ const Products = () => {
           World's Cities list:
         </h1>
         <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
-          {albums.map((data, index) => (
+          {albums && albums.map((data, index) => (
             <div key={data.flag}>
               <ProductCard data={data} />
             </div>

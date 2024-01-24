@@ -46,10 +46,10 @@ function App() {
     <TodoProvider
       value={{ addTodo, todos, removeTodo, toggleCompleted, updateTodo }}
     >
-      <h1 className="p-4 underline font-bold text-3xl bg-gray-600 dark:text-white">
-        TO DO APP WITH REACT & TAILWIND & CONTEXT API
-      </h1>
       <div className="bg-[#172842] min-h-screen py-8">
+        <h1 className="p-4 underline font-bold text-3xl text-center dark:text-white">
+          TO DO APP WITH REACT & TAILWIND & CONTEXT API
+        </h1>
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
           <h1 className="text-2xl font-bold text-center mb-8 mt-2">
             Manage Your Todos

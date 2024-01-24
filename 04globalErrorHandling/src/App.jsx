@@ -1,12 +1,12 @@
 import { ErrorBoundary } from "react-error-boundary";
 import Products from "./components/Products";
-import BoundaryError from "./components/Examples/BoundaryError";
-import Example2 from "./components/Examples/Example2";
 import Fallback from "./components/fallback/Fallback";
+import Country from "./components/GlobalErrorHandler/Country";
+import Weather from "./components/weather";
 
 function App() {
   const errorHandler = (error, errorInfo) => {
-    console.log("logging..." + error, errorInfo);
+    // console.log("logging..." + error, errorInfo);
   };
 
   return (
@@ -18,8 +18,23 @@ function App() {
         //   alert(details);
         // }}
       >
-        <Products />
+        {/* <Country /> */}
+        <Weather />
+        {/* <Products /> */}
       </ErrorBoundary>
+
+      {/* <Country /> */}
+
+      {/* <ErrorBoundary
+        FallbackComponent={Fallback}
+        onError={errorHandler}
+        // onReset={(details) => {
+        //   alert(details);
+        // }}
+      >
+        <Products />
+      </ErrorBoundary> */}
+
       {/* <div className="text-center m-4">
         <BoundaryError />
       </div> */}

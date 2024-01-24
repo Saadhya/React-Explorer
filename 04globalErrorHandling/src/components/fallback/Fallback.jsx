@@ -1,7 +1,7 @@
 import React from "react";
 
 const Fallback = ({ error, resetErrorBoundary }) => {
-    console.log(error)
+  // console.log(error);
   return (
     <div className="mx-auto flex h-auto w-1/2 mt-12 items-center text-center justify-center">
       <div className="px-2">
@@ -11,7 +11,7 @@ const Fallback = ({ error, resetErrorBoundary }) => {
             We can&#x27;t find that page
           </h1>
           <p className="mt-4 text-gray-500">
-            {error.message}
+            {error && error || error.message}
             {/* Sorry, the page you are looking for doesn&#x27;t exist or has been moved. */}
           </p>
           <div className="mt-6 flex items-center justify-center gap-x-3">
@@ -27,9 +27,9 @@ const Fallback = ({ error, resetErrorBoundary }) => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="mr-2"
               >
                 <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -59,9 +59,9 @@ const Fallback = ({ error, resetErrorBoundary }) => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="lucide lucide-arrow-right"
               >
                 <line x1="5" y1="12" x2="19" y2="12"></line>

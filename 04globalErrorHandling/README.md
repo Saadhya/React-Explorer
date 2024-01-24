@@ -32,3 +32,9 @@ https://github.com/bvaughn/react-error-boundary/blob/master/README.md
 
 - fallback is the rendering component which user will see on getting error
 - errorhandler is the function to log info
+
+# steps to install react-error-boundary
+1) npm install react-error-boundary
+2) create fallback=FallbackComponent={Fallback}
+3) create onError={errorHandler}
+4) call the component in app.jsx

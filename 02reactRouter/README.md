@@ -9,7 +9,7 @@ we should use Link (react-router-dom) only for links instead of <a> tag. Because
 # ERROR: TypeError: Cannot destructure property 'future' of 'React.useContext(...)' as it is null.
 - this is due to using react-router-dom in the application. And to execute all routes, we need to implement browserrouter() in react-app
 
-# layout using outlet (react-router-dom)
+# layout using outlet (react-router-dom) and  (react-redux)
 - <outlet /> for all home components by keeping header and footer constant. So it will contain middle variable content.
 using this only we can add nested elements in the router
 
