@@ -22,7 +22,7 @@ const Products = () => {
     console.log(res.json());
   };
   const fetchData = async () => {
-    await fetch("https://restcountries.com/v3.1/al")
+    await fetch("https://restcountries.com/v3.1/all")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
